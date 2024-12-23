@@ -1,0 +1,389 @@
+/* Style de base */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0bbd8;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+header {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #b18db6, #53174a);
+    border-radius: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #4a073f;
+}
+
+header p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #a8adb2;
+}
+
+/* Animation for box appearance */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Styling for the #about section */
+#about {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e195e1;
+    border: 2px solid #8b7385;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+}
+
+/* Styling for the heading */
+#about h2 {
+    color: #6d2560;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Styling for the paragraph */
+#about p {
+    color: #695968;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    border-radius: 8px;
+}
+
+nav ul li a {
+    
+    text-decoration: none;
+    color: #111818;
+    font-weight: bold;
+    transition: color 0.3s ease;
+   
+}
+
+nav ul li a:hover {
+    color: #161818;
+}
+
+section {
+    padding: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #850a7c;
+}
+
+h3 
+{
+    color: #111818;
+    transform: rotateX('angle');
+}
+/* Compétences */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skill {
+    background: #d67cd0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+/* Projets */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-card {
+    background: #8f4a9a;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card h3 {
+    margin: 0;
+    padding: 1rem;
+    color: #e0bed0;
+    
+}
+
+.project-card p {
+    padding: 0 1rem 1rem;
+    color: #c5c6c7;
+}
+
+/* Formulaire de contact */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+form input, form textarea, form button {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none;
+}
+
+form input, form textarea {
+    display: flex;
+    background: #bf70aa;
+    color: #703a7b;
+   
+}
+
+form button {
+    background: #b13677;
+    color: #ffffff;
+    cursor: grab;
+}
+
+form button:hover {
+    background: #9e579e;
+}
+/* Styling for the email link */
+#réseaux {
+    display: flex;
+    justify-content: space-around;
+    align-items:start;
+    text-decoration: none; /* Remove underline from link */
+    color: #333; /* Text color */
+    font-size: 1.2em; /* Font size */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+#réseaux img{
+    border-radius: 10px;
+    box-shadow: #695b68;
+
+}
+#réseaux:hover
+ {
+    color: #bc175e; /* Color change on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    background: #895f9c;
+    color: #e5dee8;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+/* Styles de base pour le menu burger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+
+
+/* Cacher le menu sur les petits écrans par défaut */
+#nav-list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#nav-list li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+/* Modifier la disposition du menu sur les petits écrans */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    #nav-list {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #53174a;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    #nav-list li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #nav-list.active {
+        display: flex;
+    }
+}
+
+
+/* Tablettes - de 768px à 1024px */
+@media (max-width: 1024px) {
+    /* Réduire la taille du titre de l'en-tête */
+    header h1 {
+        font-size: 2rem; /* Taille réduite sur les tablettes */
+    }
+
+    /* Ajuster les sections pour qu'elles aient un peu plus de padding */
+    section {
+        padding: 1.5rem;
+    }
+
+    /* Agrandir légèrement les liens de navigation */
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    /* Adapter le design des compétences et projets */
+    .skills-grid, .projects-container {
+        flex-direction: column; /* Passer à une disposition verticale */
+        align-items: center;
+    }
+
+    .skills-grid .skill, .projects-container .project-card {
+        width: 90%; /* Les éléments prennent plus de place sur les tablettes */
+        margin-bottom: 1.5rem;
+    }
+
+    /* Adapter les images des projets pour qu'elles soient responsive */
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Téléphones Portables - jusqu'à 768px */
+@media (max-width: 768px) {
+    /* Réduire la taille du titre de l'en-tête pour les petits écrans */
+    header h1 {
+        font-size: 1.5rem; /* Plus petit sur les téléphones */
+    }
+
+    /* Réduire la taille du texte dans les sections */
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p, nav ul li a {
+        font-size: 1rem; /* Réduire les tailles de texte pour la lecture sur mobile */
+    }
+
+    /* Ajuster les compétences pour être plus visibles */
+    .skills-grid, .projects-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /* Donner plus de largeur aux éléments dans la section des compétences et projets */
+    .skill, .project-card {
+        width: 95%; /* Utilisation presque complète de l'écran */
+    }
+
+    /* Ajuster la taille des images des projets */
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Pour le formulaire de contact, assurer qu'il occupe toute la largeur */
+    form input, form textarea, form button {
+        width: 100%; /* S'assurer que les éléments de formulaire prennent toute la largeur */
+    }
+
+    /* Réduire la taille des icônes de réseaux sociaux */
+    #réseaux img {
+        width: 40px; /* Plus petit pour les petits écrans */
+        height: 40px;
+    }
+
+    /* Réduire la taille du texte dans le footer */
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    /* Espacement du footer */
+    footer {
+        padding: 1rem;
+    }
+}

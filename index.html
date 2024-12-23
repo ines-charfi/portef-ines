@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Étudiante en Cybersécurité</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+</head>
+<body>
+    <header>
+        <header>
+            <nav>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul id="nav-list">
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <script>
+                // Sélection des éléments
+                const mobileMenu = document.getElementById('mobile-menu');
+                const navList = document.getElementById('nav-list');
+            
+                // Fonction pour toggler le menu
+                mobileMenu.addEventListener('click', () => {
+                    navList.classList.toggle('active');
+                });
+            </script>
+            
+            <h1>Bienvenue sur le portfolio de INES-CHARFI</h1>
+            <p> Futur alternante en développement web passionnée par la création de sites et d'applications web</p>
+        </header>
+        
+    
+    
+
+    </header>
+
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Je suis une apprentie développeuse web enthousiaste, en train de perfectionner mes compétences en HTML, CSS et JavaScript. Je suis passionnée par la création de sites web dynamiques et interactifs et j'apprends continuellement de nouvelles technologies pour améliorer mes projets. Mon objectif est de devenir une développeuse compétente et de contribuer à des projets innovants tout en développant mes capacités techniques</p>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences & Formations</h2>
+        <div class="skills-grid">
+            <div class="skill">
+                <h3><u>Mes compétences</u></h3>
+      <ul>
+        <li>HTML5 & CSS</li>
+        <li>Bueautiques: Word, Excel, PPT, Access</li>
+        <li>Virtualisation-de-machine</li>
+        <li>Git & GitHub</li>
+        <li>Python</li>
+      </ul>
+            </div>
+            <div class="skill">
+                <h3><u>Formations</u></h3>
+                <ul>
+                    <li> Maitrise en informatique appliquée à la gestion en Tunisie.</li>
+                    <li>Master proffessionnel en sécurité informatique en Tunisie .</li>
+                     <li>1ère année à LAPLATEFORME.</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3><u>Softskills</u></h3>
+                <ul>
+                    <li>Attentive, Ponctuelle, Organisée</li>
+                    <li>Esprit d'équipe, relationnelle, bonne gestion du stress</li>
+                    <li>hobbies: cuisine, yoga </li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projets Réalisés</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>BloomPetals</h3>
+                <a href="https://github.com/ines-charfi/Bloompetals.git" target="_blank">
+                    <img src="bloompetals.png" alt="BloomPetals"> 
+                </a>
+                    <p> Création du site web Bloompetals avec HTML et CSS</p>    
+                
+            </div>
+            <div class="project-card">
+                <h3>Fansite</h3>
+                <!-- L'image avec un lien autour -->
+            <a href="https://github.com/Florence-Navet/SiteFans.git" target="_blank">
+                <img src="fansite.png" alt="Fansite">
+              </a>
+              <p>Un site web Fansites pour les fans de trois célébrités.</p>
+            </div>
+            <div class="project-card">
+                <h3>Virtualisation-de-machine</h3>
+                <a href="https://github.com/ines-charfi/virtual-machine.git" target="_blank">
+                    <img src="vm.png" alt="virtualisation-de_machine">
+                    </a>
+                <p> Virtualisation de machine sous deux sustèmes d'exploitations Windows et Linux(Debian 12).</p>
+            </div>
+            <div class="project-card">
+                <h3>TIC-TAC-TOE</h3>
+                <a href="version_finale_V2.py" target="_blank">
+                    <img src="TICTACTOE.png" alt="jeu-Morpion">
+                    </a>
+                <p> Développer un jeu Morpion en Python avec un bot intelligent.</p>
+            </div>
+            <div class="project-card">
+                <h3>Projet-de-spécialisation</h3>
+                <a href="Présentation DataPlate (5).pdf" target="_blank">
+                    <img src="la_Plateforme_Marseille_google-1.jpg" alt="projet-spé">
+                    </a>
+                <p> Développer un jeu Morpion en Python avec un bot intelligent.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form>
+            <input type="text" placeholder="Nom" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <section id="réseaux" class="section">
+        <h4> 🤳 Retrouvez-moi sur les Réseaux Sociaux</h4>
+      
+         
+          <a href="https://github.com/ines-charfi/ines-charfi.git"> 
+            <img src="github.jpg "alt="Github" width="50px" height="50px">
+          </a>
+         
+         <a href="https://www.linkedin.com/in/ines-charfi-13ba13335/">
+            <img src="link.jpg" alt="LinkedIn" width="50px" height="50px">
+         </a>
+           <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=ines.charfi@laplateforme.io">
+            <img src="gmail.png" alt="GMAIL" width="50px" height="50px">
+           </a>
+    </section>
+       <footer>
+       
+          <p>&copy; 2024 Portfolio - Ines-Charfi. Tous droits réservés.</p>
+      </footer>
+</body>
+</html>
