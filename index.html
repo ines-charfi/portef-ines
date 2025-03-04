@@ -61,6 +61,10 @@
         <li>Virtualisation-de-machine</li>
         <li>Git & GitHub</li>
         <li>Python</li>
+        <li>PLESK</li>
+        <li>Back-end</li>
+        <li>Front-end</li>
+        <li>Outils de gestion de projet</li>
       </ul>
             </div>
             <div class="skill">
@@ -123,6 +127,30 @@
                     </a>
                 <p> Développer un outil de monitoring pour Laplateforme.</p>
             </div>
+            <div class="project-card">
+            <h3>Neo_MATCHA</h3>
+            <!-- L'image avec un lien autour -->
+        <a href="https://github.com/ines-charfi/matcha-the" target="_blank">
+            <img src="Neo_Matcha.png".png" alt="Matcha">
+          </a>
+          <p>Un site web pour la vente en ligne de produits de Neo_MATCHA.</p>
+        </div>
+        <div class="project-card">
+            <h3>QUIZ_NIGHT</h3>
+            <!-- L'image avec un lien autour -->
+        <a href="https://github.com/ines-charfi/QUIZNIGHT_ines" target="_blank">
+            <img src="QUIZ.png".png" alt="Quiz">
+          </a>
+          <p>Un site web qui contient un QUIZ_NIGHT avec différents thèmes .</p>
+        </div>
+        <div class="project-card">
+            <h3>Livre_Or</h3>
+            <!-- L'image avec un lien autour -->
+        <a href="https://github.com/ines-charfi/livreor" target="_blank">
+            <img src="LIVREOR.png".png" alt="Fansite">
+          </a>
+          <p>Un Livre_Or en ligne qui affiche des messages et on peut aussi ajouter un commentaire en se connectant</p>
+        </div>
         </div>
     </section>
 
@@ -154,5 +182,58 @@
        
           <p>&copy; 2024 Portfolio - Ines-Charfi. Tous droits réservés.</p>
       </footer>
+     <!-- JavaScript pour le menu burger -->
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+    <script>
+        // Créer les particules d'étincelles autour du curseur
+        document.body.addEventListener("mousemove", function (e) {
+            var sparkleContainer = document.querySelector(".sparkle-container");
+        
+            // Créer un nouvel élément de particule
+            var sparkle = document.createElement("div");
+            sparkle.classList.add("sparkle");
+        
+            // Positionner la particule à l'emplacement du curseur
+            sparkle.style.left = `${e.pageX - 5}px`;
+            sparkle.style.top = `${e.pageY - 5}px`;
+        
+            // Ajouter la particule au conteneur
+            sparkleContainer.appendChild(sparkle);
+        
+            // Supprimer la particule après l'animation
+            setTimeout(function () {
+                sparkleContainer.removeChild(sparkle);
+            }, 1000); // 1000ms = durée de l'animation
+        });
+        
+        // Créer un conteneur pour les particules d'étincelles
+        var sparkleContainer = document.createElement("div");
+        sparkleContainer.classList.add("sparkle-container");
+        document.body.appendChild(sparkleContainer);
+
+        
+            // Sélectionner toutes les boxes de projets
+            const projectBoxes = document.querySelectorAll('.project');
+        
+            // Ajouter un écouteur d'événement de clic sur chaque box de projet
+            projectBoxes.forEach(project => {
+                project.addEventListener('click', function() {
+                    // Ajouter la classe 'clicked' lors du clic
+                    project.classList.add('clicked');
+        
+                    // Supprimer la classe 'clicked' après la fin de l'animation
+                    setTimeout(() => {
+                        project.classList.remove('clicked');
+                    }, 800); // Délai pour laisser l'animation finir (800ms)
+                });
+            });
+        </script>
 </body>
 </html>
